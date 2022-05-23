@@ -1,0 +1,47 @@
+#guide{
+    width: 99%;
+    margin: 10px 0;
+}
+#guide p{
+    margin-left: 10px;/*统一设置向右偏移10px*/
+}
+#guide p a{
+    color: #2f5fa1;
+    font-size: 14px;
+    font-weight: bold;
+}
+.post{
+    margin: 5px 0 5px 0.6%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #2f5fa1;
+    background-color: #ceddf4;
+}
+.post:active{
+    background-image: linear-gradient(#fff 25%,#4faae5);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+/*给列表内容设置的样式*/
+.contentLine{
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-size: 16px;
+
+}
+.contentLine td{
+    border-bottom: 1px solid #4faae5;
+    border-right: 1px solid #4faae5;
+    margin-top: 0;
+}
+.contentLine td:nth-child(2){
+    color: #2f5fb6;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+.page{
+    color: #4faae5;
+    font-size: 16px;
+    margin: 5px 0 5px 0.6%;
+}
