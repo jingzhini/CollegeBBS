@@ -1,0 +1,41 @@
+#guide{
+    width: 99%;
+    margin: 10px 0;
+}
+#guide p{
+    margin-left: 10px;/*统一设置向右偏移10px*/
+}
+#guide p a{
+    color: #2f5fa1;
+    font-size: 14px;
+    font-weight: bold;
+}
+table {
+    text-align: center;
+    font-size: 14px;
+}
+.txt{
+    width: 240px;
+    border: 1px solid #4faae5;
+    line-height: 20px;
+    margin-top: 5px;
+}
+/*这个是套在表格里的内部选择头像表格*/
+.headTable{
+    width: 680px;
+    border: 0;
+}
+.headTable td{
+    text-align: left;
+}
+.headTable td img{
+    margin-right: 10px;
+}
+
+.submit{
+    padding: 5px;
+    margin: 15px;
+    border: 1px solid #4faae5;
+    letter-spacing: 5px;
+    background-color: #dddddd;
+}

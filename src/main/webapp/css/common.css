@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+/*table;heaLine;loginLine都是多个页面共用的样式 */
+table {
+    margin: 0 auto;
+    width: 98.8%;
+    border: 1px solid #4faae5;
+    border-collapse: separate;
+    border-spacing: 0 2px;
+}
+/*给列表标题设置的样式*/
+.headline {
+    background-color: #f3f8ef;
+    text-align: center;
+    color: #659b28;
+    font-size: 16px;
+    line-height: 28px;
+}
+.headline td{
+    border-bottom: 1px solid #4faae5;
+    border-top: 1px solid #4faae5;
+    margin-top: 50px;
+}
+.loginLine {
+    background-color: #e0f0f9;
+    line-height: 42px;
+    margin: 30px auto 0;
+    width: 99%;
+}
+.loginLine p {
+    color: #4faae5;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10px;
+}
+.loginLine p a {
+    color: #4faae5;
+}
+h6{
+    text-align: center;
+    color: grey;
+    font-weight: lighter;
+    margin-top: 30px;
+}

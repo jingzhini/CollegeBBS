@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+.loginLine {
+     background-color: #e0f0f9;
+     line-height: 42px;
+     margin: 30px auto 0;
+     width: 99%;
+}
+.loginLine p {
+    color: #4faae5;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10px;
+}
+.loginLine p a {
+    color: #4faae5;
+}
+h6{
+     text-align: center;
+     color: grey;
+     font-weight: lighter;
+     margin-top: 30px;
+}
+#guide{
+    width: 99%;
+    margin: 10px 0;
+}
+#guide p{
+    margin-left: 10px;/*统一设置向右偏移10px*/
+}
+#guide p a{
+    color: #2f5fa1;
+    font-size: 14px;
+    font-weight: bold;
+}
+table {
+     margin: 0 auto;
+     width: 98.8%;
+     border: 1px solid #4faae5;
+     border-collapse: separate;
+     border-spacing: 0 2px;
+}
+.headline {
+    font-size: 16px;
+    line-height: 28px;
+}
+.headline td{
+    border-right: 1px solid #4faae5;
+    border-bottom: 1px solid #4faae5;
+}
+.headline td p{
+    font-weight: bolder;
+    line-height: 24px;
+    margin: 5px;
+}
+.txt{
+    border: 1px solid #4faae5;
+    margin: 5px 0 0 5px;
+}
+.button{
+    padding: 5px;
+    margin-top: 15px;
+    border: 1px solid #4faae5;
+    letter-spacing: 5px;
+    background-color: #dddddd;
+}
