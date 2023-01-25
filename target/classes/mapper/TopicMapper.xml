@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.demo2.mapper.TopicMapper">
+<mapper namespace="com.example.demo2.dao.TopicDao">
     <!-- 通过一对一绑定，查询topic表的content及user表中的uName-->
     <resultMap id="getTopic" type="Topic">
         <result column="content" property="content"/>
@@ -11,20 +11,26 @@
             <result column="uName" property="uName"/>
         </association>
     </resultMap>
-    <select id="selectTopicAll" resultMap="getTopic">
-        select u.uName,t.topidId,t.title,t.content,t.publishTime,t.modifyTime from tbl_topic t,tbl_user u where t.uId=u.uId
+    <select id="selTopicAll" resultMap="getTopic">
+        select u.uName, t.topidId, t.title, t.content, t.publishTime, t.modifyTime
+        from tbl_topic t,
+             tbl_user u
+        where t.uId = u.uId
     </select>
     <!-- 查询uId一条-->
     <!--<select id="selectOneId" parameterType="int" resultType="String">
         select uName from tbl_user where uId=#{uId}
     </select>-->
     <!-- 插入发表的文章标题、内容、用户ID、板块ID、修改时间-->
-    <insert id="insertTopic" parameterType="Topic">
-        insert into tbl_topic (title,content,modifyTime,uId,boardId) values (#{title},#{content},#{modifyTime},#{uId},#{boardId})
+    <insert id="addTopic" parameterType="Topic">
+        insert into tbl_topic (title, content, modifyTime, uId, boardId)
+        values (#{title}, #{content}, #{modifyTime}, #{uId}, #{boardId})
     </insert>
 
     <!-- 获取选定的topic项的详细信息-->
-    <select id="selectView" resultType="Topic">
-        select * from tbl_topic where topidId=#{topidId}
+    <select id="selView" resultType="Topic">
+        select *
+        from tbl_topic
+        where topidId = #{topidId}
     </select>
 </mapper>
